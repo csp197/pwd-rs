@@ -10,9 +10,9 @@ SYNOPSIS
 
 DESCRIPTION
      
-     The pwd utility writes the absolute pathname of the current working directory to the standard output.
+     The pwd-rs utility writes the absolute pathname of the current working directory to the standard output.
 
-     Some shells may provide a builtin pwd command which is similar or identical to this utility.  Consult the builtin(1) manual page.
+     Unix based operating systems provide `pwd`, which should ideally be identical to this utility.
 
      The options are as follows:
 
@@ -24,13 +24,13 @@ DESCRIPTION
 
 ENVIRONMENT
 
-     Environment variables used by pwd:
+     Environment variables used by pwd-rs:
 
      PWD      Logical current working directory.
 
 EXIT STATUS
      
-     The pwd utility exits 0 on success, and >0 if an error occurs.
+     The pwd-rs utility exits 0 on success, and >0 if an error occurs.
 
 EXAMPLES
      
@@ -49,6 +49,8 @@ EXAMPLES
 HISTORY
      
      The pwd command appeared in Version 5 AT&T UNIX.
+     
+     This pwd-rs utility is not available anywhere unless you clone this repo and install it yourself.
 
 BUGS
      
@@ -57,4 +59,4 @@ BUGS
 
      The -L option does not work unless the PWD environment variable is exported by the shell.
 
-(This README was absolutely adapted from `pwd`'s man page.)
+(This README is absolutely adapted from `pwd`'s man page.)
