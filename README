@@ -12,7 +12,7 @@ DESCRIPTION
      
      The pwd-rs utility writes the absolute pathname of the current working directory to the standard output.
 
-     Unix based operating systems provide `pwd`, which should ideally be identical to this utility.
+     Unix based operating systems provide pwd, which should ideally be identical to this utility.
 
      The options are as follows:
 
