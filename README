@@ -1,4 +1,4 @@
-`pwd-rs` is a Rust based implementation of the Unix `pwd` program.
+pwd-rs is a Rust based implementation of the Unix pwd program.
 
 NAME
 
@@ -59,4 +59,4 @@ BUGS
 
      The -L option does not work unless the PWD environment variable is exported by the shell.
 
-(This README is absolutely adapted from `pwd`'s man page.)
+(This README is absolutely adapted from pwd's man page.)
