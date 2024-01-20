@@ -52,11 +52,4 @@ HISTORY
      
      This pwd-rs utility is not available anywhere unless you clone this repo and install it yourself.
 
-BUGS
-     
-     In csh(1) the command dirs is always faster because it is built into that shell.  However, it can give a different answer in the rare case that the current directory or a
-     containing directory was moved after the shell descended into it.
-
-     The -L option does not work unless the PWD environment variable is exported by the shell.
-
 (This README is absolutely adapted from pwd's man page.)
