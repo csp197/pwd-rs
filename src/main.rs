@@ -1,6 +1,6 @@
 mod tests;
 
-use std::{env, io};
+use std::env;
 
 fn print_err_and_exit(msg: String) {
     eprintln!("{}", msg);
