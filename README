@@ -5,11 +5,11 @@ NAME
      pwd-rs – return working directory name
 
 SYNOPSIS
-     
+
      ./pwd-rs [-L | -P]
 
 DESCRIPTION
-     
+
      The pwd-rs utility writes the absolute pathname of the current working directory to the standard output.
 
      Unix based operating systems provide pwd, which should ideally be identical to this utility.
@@ -29,11 +29,11 @@ ENVIRONMENT
      PWD      Logical current working directory.
 
 EXIT STATUS
-     
+
      The pwd-rs utility exits 0 on success, and >0 if an error occurs.
 
 EXAMPLES
-     
+
      Show current working directory with symbolic links resolved:
 
            $ ./pwd-rs -P
@@ -47,9 +47,13 @@ EXAMPLES
            /home: symbolic link to usr/home
 
 HISTORY
-     
+
      The pwd command appeared in Version 5 AT&T UNIX.
-     
+
      This pwd-rs utility is not available anywhere unless you clone this repo and install it yourself.
+
+BUGS
+
+     The -L option does not work unless the PWD environment variable is exported by the shell.
 
 (This README is absolutely adapted from pwd's man page.)
