@@ -1,3 +1,5 @@
+mod tests;
+
 use std::{env, io};
 
 fn get_logical_current_working_directory(env_var: String) -> String {
@@ -27,17 +29,18 @@ fn main() {
     let mut flag: &str = "";
     if args.len() >= 2 {
         flag = &args[1];
+        if !flag.starts_with('-') {
+            println!("pwd-rs: too many arguments: {}", flag);
+            std::process::exit(1)
+        }
     }
     match flag {
-        "" => println!(
-            "{}",
-            get_logical_current_working_directory(ENV_VAR_NAME.to_string())
-        ),
-        "-L" => println!(
+        "" | "-L" => println!(
             "{}",
             get_logical_current_working_directory(ENV_VAR_NAME.to_string())
         ),
         "-P" => println!("{}", get_physical_current_working_directory()),
         _ => println!("pwd-rs: bad option: {}", flag),
     }
+    std::process::exit(0);
 }
