@@ -37,12 +37,12 @@ EXAMPLES
      Show current working directory with symbolic links resolved:
 
            $ ./pwd-rs -P
-           /usr/home/fernape
+           /usr/home/csp
 
      Show the logical current directory.  Then use file(1) to inspect the /home directory:
 
            $ ./pwd-rs
-           /home/fernape
+           /home/csp
            $ file /home
            /home: symbolic link to usr/home
 
